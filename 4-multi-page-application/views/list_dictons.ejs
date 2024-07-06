@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>List of Dictons</title>
+</head>
+
+<body>
+    <main>
+        <h1>List of Dictons</h1>
+        <ul>
+            <% dictons.forEach(dicton=> { %>
+                <li><a href="/<%= dicton.id %>">
+                        <%= dicton.dicton %>
+                    </a></li>
+                <% }); %>
+        </ul>
+        <a href="/create">Create a new dicton</a>
+    </main>
+</body>
+
+</html>

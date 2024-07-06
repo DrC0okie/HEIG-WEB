@@ -1,0 +1,195 @@
+:root {
+  --background-queue: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --border-color: #E5E7EB;
+  --background-color: white;
+  --font-weight-bold: bold;
+  --font-weight-normal: normal;
+  --gap-small: 16px;
+  --gap-medium: 32px;
+  --gap-large: 48px;
+  --player-height: 80px;
+  --playlist-icon-size: 250px;
+  --icon-size: 40px;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+}
+
+main {
+  margin: 86px 0 0 86px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.body-container {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100% - 86px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/*Top playlist info*/
+.playlist-icon {
+  width: var(--playlist-icon-size);
+  height: var(--playlist-icon-size);
+  margin-right: var(--gap-medium);
+}
+
+#playlist-info {
+  display: flex;
+  margin-bottom: var(--gap-large);
+}
+
+.playlist-name {
+  margin: 8px 0 8px 0
+}
+
+.playlist-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/*Playlist section*/
+.song {
+  margin-bottom: var(--gap-medium);
+}
+
+#playlist {
+  overflow-y: auto;
+  margin-left: var(--gap-small);
+}
+
+/*flexbox with single element and top text as absolute*/
+#queue {
+  background-color: var(--background-queue);
+  width: 330px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.play-next {
+  margin: 32px 0 0 32px;
+  position: absolute;
+  top: 0;
+}
+
+.queue-state {
+  align-self: center;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* Bottom player */
+/*Nested flexbox to have a true middle element*/
+#player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.player-container {
+  height: var(--player-height);
+  display: flex;
+  flex: 1 1 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-logo-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+
+.player-song {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.player-image {
+  width: var(--player-height);
+  height: var(--player-height);
+  margin-right: var(--gap-small);
+}
+
+.player-icons {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-medium);
+  flex: 1;
+}
+
+.player-icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.player-logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: var(--gap-small);
+  flex-shrink: 2;
+}
+
+.deezer-logo {
+  height: 30px;
+}
+
+/* Fonts */
+.title {
+  font-weight: var(--font-weight-bold);
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.subtitle-one {
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-one {
+  font-weight: var(--font-weight-normal);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subtitle-two {
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.body-two {
+  font-weight: var(--font-weight-normal);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.overline {
+  font-weight: var(--font-weight-normal);
+  font-size: 12px;
+  line-height: 18px;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "07-websocket",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": ">= 12.19"
+  },
+  "scripts": {
+    "start": "node --experimental-modules server.js",
+    "watch": "nodemon --experimental-modules server.js",
+    "test": "mocha --experimental-modules"
+  },
+  "author": "Bertil Chapuis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "esm": "^3.2.25",
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.20"
+  }
+}

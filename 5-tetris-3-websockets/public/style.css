@@ -1,0 +1,53 @@
+body {
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    background: url('img/bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#currentPlayer {
+    display: flex;
+    justify-content: center;
+    margin: 24px;
+    font-size: large;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    margin: 24px;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+canvas {
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+#infoPannel {
+    margin-top: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

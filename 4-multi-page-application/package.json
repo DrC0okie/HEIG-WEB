@@ -1,0 +1,28 @@
+{
+  "name": "5-multi-page-application",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/KFkgDVjO) # Exercise 5",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.20",
+    "puppeteer": "^19.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
+}

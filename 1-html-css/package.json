@@ -1,0 +1,34 @@
+{
+  "name": "01-html-css",
+  "version": "1.0.0",
+  "description": "Practice with HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "./scripts/deploy.sh ./public",
+    "dev": "live-server ./public",
+    "start": "serve ./public -l 8080",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser firefox",
+    "test": "cypress run --browser firefox",
+    "test-with-server": "start-server-and-test start http://localhost:8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tweb-classroom/1-html-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tweb-classroom/1-html-css/issues"
+  },
+  "homepage": "https://github.com/tweb-classroom/1-html-css#readme",
+  "devDependencies": {
+    "cypress": "^10.8.0",
+    "cypress-layout-inspector": "github:paulnta/cypress-layout-inspector#next",
+    "live-server": "^1.2.2",
+    "netlify-cli": "^11.8.3",
+    "serve": "^14.0.1",
+    "start-server-and-test": "^1.14.0",
+    "wait-on": "^6.0.1"
+  }
+}
